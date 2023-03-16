@@ -4,6 +4,7 @@ const Sidebar =()=> {
     return (
         <div>
             <LeftMenu/>
+            <ProfileNav/>
         </div>
     )
 }
