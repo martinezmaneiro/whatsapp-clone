@@ -1,11 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Whatsapp from './pages/Whatsapp'
 
 const App =()=> {
-  return (
-    <div className="App">
-      <h1 className='text-blue-500'>Whatsapp</h1>
-    </div>
-  );
+  return <Whatsapp/>;
 }
 
 export default App;
