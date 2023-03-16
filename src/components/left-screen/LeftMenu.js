@@ -4,4 +4,5 @@ const LeftMenu =()=> {
         </div>
     )
 };
+
 export default LeftMenu;
