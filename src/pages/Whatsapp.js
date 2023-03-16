@@ -1,5 +1,5 @@
-import Sidebar from '../components/left-screen/Sidebar';
-import MainScreen from '../components/right-screen/MainScreen';
+import Sidebar from '../components/side-screen/Sidebar';
+import MainScreen from '../components/main-screen/MainScreen';
 
 const Whatsapp =()=> {
     return (
