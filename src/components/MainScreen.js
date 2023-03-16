@@ -1,7 +1,5 @@
 const MainScreen =()=> {
-    return (
-        <div></div>
-    )
+    return (<div></div>)
 };
 
 export default MainScreen;

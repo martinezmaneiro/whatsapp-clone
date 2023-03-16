@@ -1,6 +1,10 @@
+import LeftMenu from "./LeftMenu";
+
 const Sidebar =()=> {
     return (
-        <div></div>
+        <div>
+            <LeftMenu/>
+        </div>
     )
 }
 
