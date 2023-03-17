@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ImFolderDownload } from 'react-icons/im';
 import { chatsData } from '../../data/stored';
 import Chat from './Chat';
 
 const Chats =({ filter })=> {
-
     const [chats, setChats] = useState(chatsData);
+
+    //using useEffect hook to call the function any time the prop filter is changed.
+    useEffect(() => {
+    /*the filter will be applied yo all the chats in chats data. It will return an array
+    of the chats where unread prop is true (a number). If unread is falsy (null) the value
+    will not be returned*/
+        const newChats = filter
+        ? chatsData.filter((chat) => chat.unread) : chatsData;
+        setChats(newChats);
+    }, [filter]);
 
     return (
         <div className='flex flex-col overflow-y-scroll cursor-pointer h-100'>
@@ -18,7 +27,7 @@ const Chats =({ filter })=> {
                 </div>
                 <p className='text-emerald-500 text-xs font-light'>3</p>
             </div>
-            {chatsData.map((chat, i) => {
+            {chats.map((chat, i) => {
                 return (
                     <Chat
                         pic={chat.pic}
@@ -27,6 +36,7 @@ const Chats =({ filter })=> {
                         time={chat.time}
                         unread={chat.unread}
                         active={i === 0}
+                        key={chat.contact}
                     />
                 );
             })}
