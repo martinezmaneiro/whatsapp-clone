@@ -10,7 +10,12 @@ export const Conversation =()=> {
             style={{ padding: '12px 7%' }}
         >
             {messages.map((msg) => (
-                <Message/>
+                <Message
+                    msg={msg.msg}
+                    time={msg.time}
+                    isLink={msg.isLink}
+                    img={msg.img}
+                    sent={msg.sent}/>
             ))}
         </div>
     )
