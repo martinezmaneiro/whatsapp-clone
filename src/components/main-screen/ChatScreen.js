@@ -1,7 +1,11 @@
-const ChatScreen =()=> {
-    return (<div>
+import { ContactBar } from './ContactBar';
 
-        </div>)
+const ChatScreen =()=> {
+    return (
+        <div className='flex flex-col h-screen'>
+            <ContactBar/>
+        </div>
+    )
 };
 
 export default ChatScreen;
