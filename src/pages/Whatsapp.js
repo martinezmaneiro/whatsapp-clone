@@ -1,5 +1,5 @@
 import Sidebar from '../components/side-screen/Sidebar';
-import MainScreen from '../components/main-screen/MainScreen';
+import ChatScreen from '../components/main-screen/ChatScreen';
 
 const Whatsapp =()=> {
     return (
@@ -9,7 +9,7 @@ const Whatsapp =()=> {
                     <Sidebar/>
                 </div>
                 <div className='bg-[#222f35] min-w-[415px] max-w-[1120px] w-100 h-100'>
-                    <MainScreen/>
+                    <ChatScreen/>
                 </div>
             </div>
         </div>
