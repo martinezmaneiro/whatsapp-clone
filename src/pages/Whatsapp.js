@@ -8,13 +8,14 @@ const Whatsapp =()=> {
     const [loading, setLoading] = useState(true);
 
     useEffect(()=> {
-        setTimeout(()=>{
+        const id = setTimeout(()=>{
             if (progress >= 100) setLoading(false);
             else {
                 const increment = Math.floor(Math.random()*(10 + 1)) + 3
                 setProgress(progress + increment);
             }
-        }, 300)
+        }, 300);
+        return () => clearTimeout();
     }, [progress]);
 
     return (
