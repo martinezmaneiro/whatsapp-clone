@@ -15,7 +15,7 @@ const Whatsapp =()=> {
                 setProgress(progress + increment);
             }
         }, 300);
-        return () => clearTimeout();
+        return () => clearTimeout(id);
     }, [progress]);
 
     return (
