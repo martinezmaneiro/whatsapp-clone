@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/whatsapp-clone/static/css/main.0caa1dd5.css",
+    "main.js": "/whatsapp-clone/static/js/main.f6b101a3.js",
+    "static/media/bg.webp": "/whatsapp-clone/static/media/bg.8aeec790281423c658be.webp",
+    "static/media/palm.png": "/whatsapp-clone/static/media/palm.f792354192774e2afed0.png",
+    "static/media/chat10.png": "/whatsapp-clone/static/media/chat10.8958c97b9f27cadb12df.png",
+    "static/media/chat4.png": "/whatsapp-clone/static/media/chat4.9cea5b4c312c955159f1.png",
+    "static/media/chat1.png": "/whatsapp-clone/static/media/chat1.ea9ace4fca8c5509b06a.png",
+    "static/media/chat11.png": "/whatsapp-clone/static/media/chat11.a8600c54ebe257739d8f.png",
+    "static/media/chat8.png": "/whatsapp-clone/static/media/chat8.dd2f48679fc756e88fae.png",
+    "static/media/chat7.png": "/whatsapp-clone/static/media/chat7.1c3a7c55ce28059de5e2.png",
+    "static/media/chat3.png": "/whatsapp-clone/static/media/chat3.190524002717d93f6a53.png",
+    "static/media/chat6.png": "/whatsapp-clone/static/media/chat6.c3f3be0065973a7e9a2b.png",
+    "static/media/bees.jpeg": "/whatsapp-clone/static/media/bees.64f2f49f08a5f203e72a.jpeg",
+    "static/media/chat2.png": "/whatsapp-clone/static/media/chat2.9bdfeffad8b074aea0b3.png",
+    "static/media/chat5.png": "/whatsapp-clone/static/media/chat5.ddeffb75f14ec653128d.png",
+    "static/media/personal.jpg": "/whatsapp-clone/static/media/personal.349aa64f7ba5913c90ac.jpg",
+    "index.html": "/whatsapp-clone/index.html",
+    "main.0caa1dd5.css.map": "/whatsapp-clone/static/css/main.0caa1dd5.css.map",
+    "main.f6b101a3.js.map": "/whatsapp-clone/static/js/main.f6b101a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0caa1dd5.css",
+    "static/js/main.f6b101a3.js"
+  ]
+}
