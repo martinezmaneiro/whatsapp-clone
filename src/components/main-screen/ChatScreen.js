@@ -25,14 +25,16 @@ const ChatScreen =()=> {
     }
 
     const handleSending =()=> {
-        addMessage({
-            msg: inputRef.current.value,
-            time: getTime(),
-            sent: true
-        })
-        inputRef.current.value = '';
-        inputRef.current.focus();
-        setTyping(false);
+        if (inputRef.current.value.length > 0){
+            addMessage({
+                msg: inputRef.current.value,
+                time: getTime(),
+                sent: true
+            })
+            inputRef.current.value = '';
+            inputRef.current.focus();
+            setTyping(false);
+        }
     };
 
     useEffect(()=> {
