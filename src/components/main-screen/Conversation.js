@@ -1,9 +1,6 @@
-import { useState } from 'react';
-import { messagesData } from '../../data/stored';
 import Message from './Message';
 
-export const Conversation =()=> {
-    const [messages, setMessages] = useState(messagesData);
+export const Conversation =({messages})=> {
     return (
         <div
             className="bg-[#0a131a] bg-[url('assets/images/bg.webp')] bg-contain overflow-y-scroll h-100"
