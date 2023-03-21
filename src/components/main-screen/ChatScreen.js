@@ -8,6 +8,7 @@ import { messagesData } from '../../data/stored';
 import { ContactBar } from './ContactBar';
 import { Conversation } from './Conversation';
 import { getTime } from '../../logic/whatsapp';
+import palm from '../../assets/images/palm.png'
 
 const ChatScreen =()=> {
     const [messages, setMessages] = useState(messagesData);
@@ -23,6 +24,18 @@ const ChatScreen =()=> {
         const newMessages = [...messages, msg];
         setMessages(newMessages);
     }
+
+    const handleEmoji =()=> {
+        inputRef.current.value += '😎';
+        inputRef.current.focus();
+    }
+    const handleImg =()=> {
+        addMessage({
+            img: palm,
+            time: getTime(),
+            sent: true
+        })
+    };
 
     const handleSending =()=> {
         if (inputRef.current.value.length > 0){
@@ -52,9 +65,9 @@ const ChatScreen =()=> {
             <ContactBar/>
             <Conversation messages={messages}/>
             <div className='flex items-center bg-[#202d33] w-100 h-[70px] p-2'>
-                <Button icon={<BiHappy/>}/>
+                <Button icon={<BiHappy/>} onClick={handleEmoji}/>
                 <span className='mr-2'>
-                    <Button icon={<AiOutlinePaperClip/>}/>
+                    <Button icon={<AiOutlinePaperClip/>} onClick={handleImg}/>
                 </span>
                 <input
                     type='text'
