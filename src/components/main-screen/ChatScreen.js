@@ -7,6 +7,7 @@ import Button from '../hoc/Button';
 import { messagesData } from '../../data/stored';
 import { ContactBar } from './ContactBar';
 import { Conversation } from './Conversation';
+import { getTime } from '../../logic/whatsapp';
 
 const ChatScreen =()=> {
     const [messages, setMessages] = useState(messagesData);
@@ -26,9 +27,12 @@ const ChatScreen =()=> {
     const handleSending =()=> {
         addMessage({
             msg: inputRef.current.value,
-            time: getTime,
+            time: getTime(),
             sent: true
         })
+        inputRef.current.value = '';
+        inputRef.current.focus();
+        setTyping(false);
 
     };
 
