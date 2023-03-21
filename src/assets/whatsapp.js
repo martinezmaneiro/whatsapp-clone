@@ -10,6 +10,6 @@ import chat9 from './images/chat9.png';
 import chat10 from './images/chat10.png';
 import chat11 from './images/chat11.png';
 import personal from './images/personal.jpg';
+import bees from './images/bees.jpeg';
 
-
-export { chat1, chat2, chat3, chat4, chat5, chat6, chat7, chat8, chat9, chat10, chat11, personal};
+export { chat1, chat2, chat3, chat4, chat5, chat6, chat7, chat8, chat9, chat10, chat11, personal, bees};

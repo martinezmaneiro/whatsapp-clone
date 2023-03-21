@@ -9,7 +9,8 @@ import {
     chat8,
     chat9,
     chat10,
-    chat11
+    chat11,
+    bees
 } from "../assets/whatsapp";
 
 export const chatsData = [
@@ -51,7 +52,7 @@ export const chatsData = [
     {
     pic: chat6,
     contact: "Phoebs",
-    msg: "Don't you dare invite Barney. He is a jerk!",
+    msg: "Don't you dare invite Wednesday. She is a jerk!",
     time: "10:35 am",
     unread: 2,
     },
@@ -101,79 +102,83 @@ export const chatsData = [
 
 export const messagesData = [
     {
-    msg: "Hey wassupp bro!",
+    msg: "Don't do it",
     time: "10:58 am",
     sent: true,
     },
     {
-    msg: "This WhatsApp clone is firee 🔥",
+    msg: "Just ignore them",
     time: "10:58 am",
     sent: true,
     },
     {
-    msg: "Keep it up! 👍👍👍",
-    time: "10:59 am",
-    sent: true,
-    },
-    {
-    msg: "Thanks a lot! 😀",
+    msg: "Do what?",
     time: "11:15 am",
     sent: false,
     },
     {
-    msg: "Make sure to follow all my socials! 👌👌",
+    msg: "What are you talking about?",
     time: "11:15 am",
     sent: false,
     },
     {
-    msg: "I will! what's your Github?",
+    msg: "I know you... you're mad 'cause they didn't invite you",
     time: "11:28 am",
     sent: true,
     },
     {
-    msg: "AlejoG10",
+    msg: "I don't wanna go anyway. ",
     time: "11:36 am",
     sent: false,
     },
     {
-    msg: "https://github.com/AlejoG10",
-    isLink: true,
+    msg: "Don't make a fool of yourself.",
     time: "11:36 am",
     sent: false,
     },
     {
-    msg: "And your YouTube channel?",
+    msg: "Ok just don't do anything silly",
     time: "11:47 am",
     sent: true,
     },
     {
-    msg: "Coding Spot",
-    time: "11:55 am",
+    msg: "Just stay close of the exit room and you'll be fine.",
+    time: "11:50 am",
     sent: false,
     },
     {
-    msg: "https://www.youtube.com/channel/UCLqXQLK6zKZg0trhanjAkkQ",
+    msg: "https://www.youtube.com/watch?v=K3-Oz-sHWZo",
     isLink: true,
     time: "11:55 am",
     sent: false,
     },
     {
-    img: chat6,
+    msg: "Think this is my best trick? 🤩",
+    time: "11:55 am",
+    sent: false,
+    },
+    {
+    img: bees,
     time: "11:56 am",
     sent: false,
     },
     {
-    msg: "Niceeee channel! 🔥💯",
+        img: chat6,
+        time: "11:57 am",
+        sent: false,
+    },
+    {
+    msg: "Don't you... Phoebs is alergic!",
     time: "12:35 pm",
     sent: true,
     },
     {
-    msg: "I will see all of your videos 😉",
+    msg: "I bet she is 😉",
     time: "12:35 pm",
-    sent: true,
+    sent: false,
     },
     {
-    msg: "Awesome, thank for your support! 🙌",
+    msg: "Send my regards",
     time: "1:15 pm",
     sent: false,
     },
