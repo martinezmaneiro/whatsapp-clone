@@ -28,7 +28,7 @@ const Message =({ msg, time, img, isLink, sent})=> {
                     ):(
                         <p className="text-white text-sm mr-2">{msg}</p>
                     )}
-                    <p>{time}</p>
+                    <p className="text-[#8796a1] text-[10px] min-w-[50px]">{time}</p>
                 </div>)
             }
         </div>

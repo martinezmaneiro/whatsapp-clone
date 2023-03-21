@@ -9,7 +9,7 @@ export const ContactBar =()=> {
             <div className='flex items-center'>
                 <img src={personal} alt='profile-picture' className='rounded-full w-[45px] h-[45px] mr-5'/>
                 <div className='flex flex-col'>
-                    <h1 className='text-white font-medium'></h1>
+                    <h1 className='text-white font-medium'>{/*contact name*/}</h1>
                     {Math.random() > 0.5 ? <p className='text-[#8796a1] text-xs'>Online</p>:<p className='text-[#8796a1] text-xs'>Offline</p>}
                 </div>
             </div>
