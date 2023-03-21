@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { MdSend } from 'react-icons/md';
 import { BiHappy } from 'react-icons/bi';
 import { AiOutlinePaperClip } from 'react-icons/ai';
@@ -13,7 +13,6 @@ const ChatScreen =()=> {
     const [messages, setMessages] = useState(messagesData);
     const [typing, setTyping] = useState(false);
     const inputRef = useRef(null);
-    const bottomRef = useRef(null);
 
     const handleInputChange =()=>{
         inputRef.current.value.length === 0?
@@ -35,6 +34,16 @@ const ChatScreen =()=> {
         inputRef.current.focus();
         setTyping(false);
     };
+
+    useEffect(()=> {
+        const listener =(e)=> {
+            if (e.code === 'Enter'){
+                handleSending();
+            }
+        };
+        document.addEventListener('keydown', listener);
+        return ()=> document.removeEventListener('keydown', listener)
+    })
 
     return (
         <div className='flex flex-col h-screen'>
