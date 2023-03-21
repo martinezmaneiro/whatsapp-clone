@@ -11,7 +11,7 @@ const Whatsapp =()=> {
         const id = setTimeout(()=>{
             if (progress >= 100) setLoading(false);
             else {
-                const increment = Math.floor(Math.random()*(10 + 1)) + 3
+                const increment = Math.floor(Math.random()*(10 + 1)) + 7
                 setProgress(progress + increment);
             }
         }, 300);
